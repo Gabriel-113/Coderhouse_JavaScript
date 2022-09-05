@@ -26,7 +26,18 @@
                     </div>
                     <div class="flex pt">
                         <div class="login"><a href=""><i class="bi bi-person-circle">Login</i></a></div>
-                        <div><i class="bi bi-cart-fill">10</i></div>
+                        <div>
+                            <i click="mostrarCarrito(this)" class="bi bi-cart-fill"><p class="cantidad">0</p></i>
+                            
+                        </div>
+                        <div id="id_productos">
+                            <p class="btn_cerrar" onclick="cerrarCarrito()"><i class="bi bi-x-circle-fill"></i></p>
+                            <h4>Mi carrito</h4>
+                            <div class="items">
+
+                            </div>
+                            <h4 class="precioTotal">total: $  </h4>
+                        </div>
                         <div class="media">
                             <a href="#"><i class="bi bi-facebook"></i></a>
                             <a href="#"><i class="bi bi-instagram"></i></a>
@@ -72,8 +83,8 @@
     </div>
     <div class="productos">
         <div class="card">
-            <div class="img-box"><img src="css/assets/monitor.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class=" descripcion img-box">
+                <img src="css/assets/monitor.jpg" alt="">
                 <p class="name">Monitor</p>
                 <p>$25000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -81,8 +92,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="img-box"><img src="css/assets/fuente.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/fuente.jpg" alt="">
                 <p class="name">Fuente</p>
                 <p>$14000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -90,8 +101,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="img-box"><img src="css/assets/gabinete.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/gabinete.jpg" alt="">
                 <p class="name">Gabinete</p>
                 <p>$10000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -99,8 +110,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="img-box"><img src="css/assets/mother_.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/mother_.jpg" alt="">
                 <p class="name">Mother</p>
                 <p>$18000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -108,8 +119,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/auriculares.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/auriculares.jpg" alt="">
                 <p class="name">Auriculares</p>
                 <p>$10000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -117,8 +128,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/placa_video.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/placa_video.jpg" alt="">
                 <p class="name">Placa grafica</p>
                 <p>$75000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -126,8 +137,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/ram.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/ram.jpg" alt="">
                 <p class="name">Memoria ram</p>
                 <p>$9000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -135,8 +146,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/rigido.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/rigido.jpg" alt="">
                 <p class="name">Disco rigido</p>
                 <p>$12000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -144,8 +155,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/ssd.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/ssd.jpg" alt="">
                 <p class="name">Disco ssd</p>
                 <p>$16000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -153,8 +164,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/notebook_gamer.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/notebook_gamer.jpg" alt="">
                 <p class="name">Notebook gamer</p>
                 <p>$85000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -162,8 +173,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/teclado.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/teclado.jpg" alt="">
                 <p class="name">Teclado</p>
                 <p>$8500</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>
@@ -171,8 +182,8 @@
             </div>
         </div>
         <div class="card mt-5">
-            <div class="img-box"><img src="css/assets/procesador.jpg" alt="" class="img-p"></div>
-            <div class="descripcion">
+            <div class="descripcion img-box">
+                <img src="css/assets/procesador.jpg" alt="">
                 <p class="name">Procesador</p>
                 <p>$20000</p>
                 <div class="btn_producto"><a href="">Tienda</a></div>

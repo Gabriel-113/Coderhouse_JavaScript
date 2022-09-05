@@ -218,6 +218,67 @@ nav {
     cursor: pointer;
 }
 
+
+#id_productos {
+    display: none;
+}
+.items img {
+    width: 120px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(0, 25, 63);
+}
+
+.items .contador {
+    width: 250px;
+}
+
+.items .contador .name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.items .contador .precioTotal{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.items .contador .cantidad {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.items .borrar_producto {
+    cursor: pointer;
+    color: rgb(5, 5, 88);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     height: 5rem;
     width: 100%;
