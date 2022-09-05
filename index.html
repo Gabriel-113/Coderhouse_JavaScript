@@ -5,44 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Pre-Entrega_Trabajo-Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tilt | Hardware</title>
 </head>
 
 <body>
-    <h1>Kubrik - Venta de computacion</h1>
-    <h2>Arma tu pc</h2>
-
-
-
-    <article>
-        <div class="producto"><img src="" alt="Procesador"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Ram"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Mother"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Disco Interno"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Disco Solido"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Tarjeta de Video"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Cooler"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Gabinete"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Fuente"><button>Agregar al carrito</button></div>
-        <div class="producto"><img src="" alt="Monitor"><button>Agregar al carrito</button></div>
-    </article>
-
-    <div class="ir">
-        <button class="boton">Ir al carrito</button>
-        <button class="boton">Cuenta</button>
+    <header>
+        <nav>
+            <div>
+                <div class="grid">
+                    <div>
+                        <a href="index.html"><img src="css/assets/logo_transparent1.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="pt">
+                        <input type="search" name="" id="" class="search"><button class="btn_search">Buscar</button>
+                    </div>
+                    <div class="flex pt">
+                        <div class="login"><a href=""><i class="bi bi-person-circle">Login</i></a></div>
+                        <div><i class="bi bi-cart-fill">10</i></div>
+                        <div class="media">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <a href="index.html">Home</a>
+                    <a href="pages/tienda.html">Tienda</a>
+                    <a href="#">Arma tu PC</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Ayuda</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide mt-4 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="css/assets/gaming.jpg" class="d-block w-100 img-c" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="css/assets/setup.jpg" class="d-block w-100 img-c" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="css/assets/notebook.jpg" class="d-block w-100 img-c" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="titulo mb-5">
+        Productos destacados
+    </div>
+    <div class="productos">
+        <div class="card">
+            <div class="img-box"><img src="css/assets/monitor.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Monitor</p>
+                <p>$25000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="1"></i></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="css/assets/fuente.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Fuente</p>
+                <p>$14000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="2"></i></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="css/assets/gabinete.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Gabinete</p>
+                <p>$10000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="3"></i></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box"><img src="css/assets/mother_.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Mother</p>
+                <p>$18000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="4"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/auriculares.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Auriculares</p>
+                <p>$10000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="5"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/placa_video.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Placa grafica</p>
+                <p>$75000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="6"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/ram.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Memoria ram</p>
+                <p>$9000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="7"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/rigido.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Disco rigido</p>
+                <p>$12000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="8"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/ssd.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Disco ssd</p>
+                <p>$16000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="9"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/notebook_gamer.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Notebook gamer</p>
+                <p>$85000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="10"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/teclado.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Teclado</p>
+                <p>$8500</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="11"></i></div>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="img-box"><img src="css/assets/procesador.jpg" alt="" class="img-p"></div>
+            <div class="descripcion">
+                <p class="name">Procesador</p>
+                <p>$20000</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div><i class="bi bi-cart" data-id="12"></i></div>
+            </div>
+        </div>
     </div>
 
-    <section>
-        <form>
-            <p>Ingrese su nombre</p><input type="text">
-            <p>Ingrese su Apellido</p><input type="text">
-            <p>Ingrese su edad</p><input type="text">
-            <p><button>Crear cuenta</button></p>
-        </form>
-    </section>
-
+    <footer class="mt-5 p-5 text-center">
+        <div class="copy">Copyright © 2022 - Tilt | Hardware</div>
+    </footer>
     <script src="codigo.js"></script>
+    <!--Codigo propio-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <!--Bootstrap-->
+
 </body>
 
 </html>
