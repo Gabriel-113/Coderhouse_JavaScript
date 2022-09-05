@@ -1,19 +1,24 @@
-function mostrarCarrito(p) {
-    document.getElementById("id_productos");
-}
+const abrir = document.getElementById('abrir');
+const modal = document.getElementById('id_productos');
+const cerrar = document.getElementById('cerrar');
 
-function cerrarCarrito() {
-    document.getElementById("id_productos");
-}
+abrir.addEventListener('click', () => {
+    modal.classList.add('mostrar');
+})
 
+cerrar.addEventListener('click', () => {
+    modal.classList.remove('mostrar');
+})
 
 let cards = document.querySelector('.productos');
 let ventanaCarrito = document.querySelector('.items')
 let carrito = [];
-let precio_final = document.querySelector('precioTotal');
+let precio_final = document.querySelector('.precioTotal');
 let cantidad_carrito = document.querySelector('.cantidad');
 let total = 0;
 let cantidadproductos = 0;
+
+console.log(cards, ventanaCarrito, carrito, precio_final, cantidad_carrito, total, cantidadproductos);
 
 
 eventos();
@@ -21,6 +26,7 @@ function eventos() {
     cards.addEventListener('click', agregar_producto);
 
     ventanaCarrito.addEventListener('click', borrarProducto);
+
 }
 
 function agregar_producto(e) {
@@ -52,7 +58,7 @@ function borrarProducto(e) {
 
 function datos(producto) {
     let datoProducto = {
-        imagen: producto.querySelector('div img'),
+        imagen: producto.querySelector('div img').src,
         nombre: producto.querySelector('.name').textContent,
         precio: producto.querySelector('div p').textContent,
         id: producto.querySelector('div i').getAttribute('data-id'),
@@ -74,6 +80,7 @@ function datos(producto) {
         });
 
         carrito = [...producto_];
+
     } else {
         carrito = [...carrito, datoProducto];
         cantidadproductos++;
@@ -95,9 +102,7 @@ function interaccion() {
                 <p>Cantidad: ${cantidad}</p>
                 </div>
                 <div class="borrar_producto" data-id="${id}"><i class="bi bi-x-circle-fill"></i></div>
-        
         `;
-
 
         ventanaCarrito.appendChild(car)
     })
@@ -111,3 +116,5 @@ function actualizarhtml() {
     ventanaCarrito.innerHTML = '';
 
 }
+console.log(cards, ventanaCarrito, carrito, precio_final, cantidad_carrito, total, cantidadproductos);
+console.log(eventos(), agregar_producto(), borrarProducto(), datos(), interaccion(), actualizarhtml());
