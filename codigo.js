@@ -1,13 +1,14 @@
 const abrir = document.getElementById('abrir');
 const modal = document.getElementById('id_productos');
+modal.style.display = "none";
 const cerrar = document.getElementById('cerrar');
 
 abrir.addEventListener('click', () => {
-    modal.classList.add('mostrar');
+    modal.style.display = "";
 })
 
 cerrar.addEventListener('click', () => {
-    modal.classList.remove('mostrar');
+    modal.style.display = "none";
 })
 
 let cards = document.querySelector('.productos');
@@ -51,20 +52,22 @@ function borrarProducto(e) {
     }
 
     actualizarhtml();
+    interaccion();
 }
 
 function datos(producto) {
     let datoProducto = {
         imagen: producto.querySelector('div img').src,
         nombre: producto.querySelector('.name').textContent,
-        precio: producto.querySelector('div p').textContent,
+        precio: parseFloat(producto.querySelector('.precio').textContent.replaceAll("$","")),
         id: producto.querySelector('div i').getAttribute('data-id'),
         cantidad: 1
     }
 
     total = total + datoProducto.precio;
 
-    let mismoProducto = carrito.some(producto => producto.id === datoProducto)
+    let mismoProducto = carrito.some(producto => producto.id === datoProducto.id)
+    
     if (mismoProducto) {
         let producto_ = carrito.map(producto => {
             if (producto.id === datoProducto.id) {
@@ -91,18 +94,16 @@ function interaccion() {
         let car = document.createElement('div');
         car.classList.add('car_style');
         car.innerHTML = `
-                <img src="${imagen}" alt="">
+                <img src="${imagen}" alt=""><i class="borrar_producto bi bi-x-circle-fill" data-id="${id}"></i>
                 <p class="name">${nombre}</p>
-                <p class="precio_total">$ ${precio}</p>
+                <p class="precio_total">${precio}</p>
                 <p>Cantidad: ${cantidad}</p>
-                <div class="borrar_producto" data-id="${id}"><i class="bi bi-x-circle-fill"></i></div>
         `;
 
         ventanaCarrito.appendChild(car)
     })
 
-    precio_final.innerHTML = total;
-
+    precio_final.innerHTML = `Total: $ ${total}` ;
     cantidad_carrito.innerHTML = cantidadproductos;
 }
 
