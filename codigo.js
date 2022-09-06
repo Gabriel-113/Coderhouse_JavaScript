@@ -18,9 +18,6 @@ let cantidad_carrito = document.querySelector('.cantidad');
 let total = 0;
 let cantidadproductos = 0;
 
-console.log(cards, ventanaCarrito, carrito, precio_final, cantidad_carrito, total, cantidadproductos);
-
-
 eventos();
 function eventos() {
     cards.addEventListener('click', agregar_producto);
@@ -67,7 +64,6 @@ function datos(producto) {
 
     total = total + datoProducto.precio;
 
-
     let mismoProducto = carrito.some(producto => producto.id === datoProducto)
     if (mismoProducto) {
         let producto_ = carrito.map(producto => {
@@ -96,11 +92,9 @@ function interaccion() {
         car.classList.add('car_style');
         car.innerHTML = `
                 <img src="${imagen}" alt="">
-                <div class="contador">
                 <p class="name">${nombre}</p>
                 <p class="precio_total">$ ${precio}</p>
                 <p>Cantidad: ${cantidad}</p>
-                </div>
                 <div class="borrar_producto" data-id="${id}"><i class="bi bi-x-circle-fill"></i></div>
         `;
 
@@ -116,5 +110,4 @@ function actualizarhtml() {
     ventanaCarrito.innerHTML = '';
 
 }
-console.log(cards, ventanaCarrito, carrito, precio_final, cantidad_carrito, total, cantidadproductos);
-console.log(eventos(), agregar_producto(), borrarProducto(), datos(), interaccion(), actualizarhtml());
+

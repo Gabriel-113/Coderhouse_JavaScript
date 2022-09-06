@@ -205,8 +205,8 @@ nav {
 }
 
 /* carrito */
-.modal {
-    height: 250px;
+/* .modal {
+    height: 100px;
     width: 250px;
     opacity: 0;
 }
@@ -216,39 +216,34 @@ nav {
     opacity: 1;
 }
 
-.items img {
-    width: 120px;
+#id_productos .items .car_style  img{
+    width: 10px;
 }
 
-.items {
-    display: flex;
-    align-items: center;
-    border-bottom: solid 2px rgb(0, 25, 63);
+
+.items .car_style .contador {
+    width: 150px;
 }
 
-.items .contador {
-    width: 250px;
-}
-
-.items .contador .name {
+.items .car_style .contador .name {
     font-size: 15px;
     font-weight: bold;
 }
 
-.items .contador .precioTotal {
+.items .car_style .contador .precioTotal {
     font-size: 22px;
     font-weight: bold;
 }
 
-.items .contador .cantidad {
+.items .car_style .contador .cantidad {
     font-size: 15px;
     font-weight: bold;
 }
 
-.items .borrar_producto {
+.items .car_style .borrar_producto {
     cursor: pointer;
     color: rgb(5, 5, 88);
-}
+} */
 
 
 
