@@ -218,10 +218,9 @@ nav {
     cursor: pointer;
 }
 
-.btn_cerrar:hover {
+.btn_cerrar:hover{
     color: rgb(59, 59, 58);
 }
-
 .items .bi {
     color: rgb(22, 21, 21)
 }
@@ -299,28 +298,6 @@ nav {
     color: rgb(5, 5, 88);
 }
 
-
-/* compra */
-
-.btn_comprar {
-    margin-left: 4rem;
-    width: 8rem;
-    height: 2rem;
-    border-style: none;
-    border-radius: 5px;
-    background-color: rgb(0, 25, 63);
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.btn_comprar:hover {
-    background-color: rgb(153, 151, 151);
-    color: rgb(0, 25, 63);
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-}
 
 
 /* footer */
