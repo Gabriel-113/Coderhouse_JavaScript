@@ -12,7 +12,7 @@ nav {
 
 .grid {
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 20% 45% 35%;
     grid-template-rows: 5rem;
 }
 
@@ -70,7 +70,7 @@ nav {
 }
 
 .sub-menu a:hover {
-    scale: 1.1;
+    color: rgb(255, 255, 255);
 }
 
 .bi {
@@ -104,7 +104,7 @@ nav {
 .login {
     background-color: rgba(92, 111, 173, 0.753);
     height: 2rem;
-    width: 10rem;
+    width: 14rem;
     text-align: center;
     border-radius: 5px;
     font-weight: bold;
@@ -112,7 +112,7 @@ nav {
     -webkit-box-shadow: 2px 1px 25px 3px rgba(0, 0, 0, 0.81);
     -moz-box-shadow: 2px 1px 25px 3px rgba(0, 0, 0, 0.81);
     cursor: pointer;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
 }
 
 .login a {
@@ -320,6 +320,22 @@ nav {
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: rgb(0, 25, 63) !important;
+    width: 10rem !important;
+    font-family: inherit !important;
+    font-weight: bolder !important;
+    border-style: none !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+    background-color: rgb(153, 151, 151) !important;
+    color: rgb(0, 25, 63) !important;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75) !important;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75) !important;
 }
 
 
