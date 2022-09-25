@@ -1,7 +1,31 @@
 const abrir = document.getElementById('abrir');
 const modal = document.getElementById('id_productos');
+const products_div = document.getElementById('productos')
 modal.style.display = "none";
 const cerrar = document.getElementById('cerrar');
+
+
+
+fetch('products.json')
+    .then ((respuesta) => respuesta.json())
+    .then ((productos) => {
+        productos.forEach(producto => {
+            let { imagen, nombre, precio, id } = producto;
+            let product_div = document.createElement('div')
+            product_div.classList = 'card mt-5'
+            product_div.innerHTML = `
+            <div class="descripcion img-box">
+                <img src="${imagen}" alt="">
+                <p class="name">${nombre}</p>
+                <p class="precio">$ ${precio}</p>
+                <div class="btn_producto"><a href="">Tienda</a></div>
+                <div>Agregar <i class="bi bi-cart" data-id="${id}"></i></div>
+            </div>
+            `;
+            products_div.appendChild(product_div)
+        })
+        agregar_eventos_producto();
+    })
 
 abrir.addEventListener('click', () => {
     modal.style.display = "";
@@ -11,18 +35,18 @@ cerrar.addEventListener('click', () => {
     modal.style.display = "none";
 })
 
-let cards = document.querySelector('.productos');
 let ventanaCarrito = document.querySelector('.items')
+ventanaCarrito.addEventListener('click', borrarProducto);
+
 let carrito = [];
 let precio_final = document.querySelector('.precioTotal');
 let cantidad_carrito = document.querySelector('.cantidad');
 let total = 0;
 let cantidadproductos = 0;
+let cards = document.querySelector('#productos');
 
-eventos();
-function eventos() {
+function agregar_eventos_producto() {
     cards?.addEventListener('click', agregar_producto);
-    ventanaCarrito.addEventListener('click', borrarProducto);
 }
 
 function agregar_producto(e) {
@@ -136,6 +160,7 @@ function comprar() {
     localStorage.setItem('proximo_id', id)
     carrito = []
     precio_final.innerHTML = `Total: $ 0`;
+    total = 0;
     cantidad_carrito.innerHTML = 0;
     limpiarCarritoHtml();
     if (cantidadproductos != 0) {

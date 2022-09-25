@@ -136,7 +136,7 @@ nav {
     font-weight: bold;
 }
 
-.productos {
+#productos {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
@@ -168,7 +168,6 @@ nav {
     display: flex;
     flex-flow: column;
     align-items: center;
-    border-top: 1px solid #4b4a4a56;
     text-align: center;
     font-weight: bold;
 }
