@@ -1,19 +1,23 @@
 const abrir = document.getElementById('abrir');
 const modal = document.getElementById('id_productos');
-const products_div = document.getElementById('productos')
-modal.style.display = "none";
+const products_div = document.getElementById('productos');
 const cerrar = document.getElementById('cerrar');
 
+modal.style.display = "none";
 
 
-fetch('products.json')
-    .then ((respuesta) => respuesta.json())
-    .then ((productos) => {
-        productos.forEach(producto => {
-            let { imagen, nombre, precio, id } = producto;
-            let product_div = document.createElement('div')
-            product_div.classList = 'card mt-5'
-            product_div.innerHTML = `
+
+fetch('/products.json')
+    .then((respuesta) => respuesta.json())
+    .then((productos) => {
+        products_div.getAttribute("inicio");
+        products_div.getAttribute("tienda");
+        if ("tienda") {
+            productos.forEach(producto => {
+                let { imagen, nombre, precio, id } = producto;
+                let product_div = document.createElement('div')
+                product_div.classList = 'card mt-5'
+                product_div.innerHTML = `
             <div class="descripcion img-box">
                 <img src="${imagen}" alt="">
                 <p class="name">${nombre}</p>
@@ -21,10 +25,14 @@ fetch('products.json')
                 <div class="btn_producto"><a href="">Tienda</a></div>
                 <div>Agregar <i class="bi bi-cart" data-id="${id}"></i></div>
             </div>
-            `;
-            products_div.appendChild(product_div)
-        })
-        agregar_eventos_producto();
+            `
+                products_div.appendChild(product_div)
+            })
+            agregar_eventos_producto();
+        } else if ("inicio") {
+
+
+        }
     })
 
 abrir.addEventListener('click', () => {

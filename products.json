@@ -1,74 +1,170 @@
 [
     {
         "nombre": "Procesador",
-        "imagen": "./css/assets/procesador.jpg",
+        "imagen": "/css/assets/procesador.jpg",
         "precio": 20000,
         "id": 1
     },
     {
         "nombre": "Memoria ram",
-        "imagen": "./css/assets/ram.jpg",
+        "imagen": "/css/assets/ram.jpg",
         "precio": 9000,
         "id": 2
     },
     {
         "nombre": "Mother",
         "precio": 18000,
-        "imagen": "./css/assets/mother_.jpg",
+        "imagen": "/css/assets/mother_.jpg",
         "id": 3
     },
     {
         "nombre": "Disco rigido",
-        "imagen": "./css/assets/rigido.jpg",
+        "imagen": "/css/assets/rigido.jpg",
         "precio": 12000,
         "id": 4
     },
     {
         "nombre": "Disco ssd",
-        "imagen": "./css/assets/ssd.jpg",
+        "imagen": "/css/assets/ssd.jpg",
         "precio": 16000,
         "id": 5
     },
     {
         "nombre": "Placa grafica",
-        "imagen": "./css/assets/placa_video.jpg",
+        "imagen": "/css/assets/placa_video.jpg",
         "precio": 75000,
         "id": 6
     },
     {
         "nombre": "Gabinete",
-        "imagen": "./css/assets/gabinete.jpg",
+        "imagen": "/css/assets/gabinete.jpg",
         "precio": 10000,
         "id": 7
     },
     {
         "nombre": "Fuente",
-        "imagen": "./css/assets/fuente.jpg",
+        "imagen": "/css/assets/fuente.jpg",
         "precio": 14000,
         "id": 8
     },
     {
         "nombre": "Monitor",
-        "imagen": "./css/assets/monitor.jpg",
+        "imagen": "/css/assets/monitor.jpg",
         "precio": 25000,
         "id": 9
     },
     {
         "nombre": "Teclado",
-        "imagen": "./css/assets/teclado.jpg",
+        "imagen": "/css/assets/teclado.jpg",
         "precio": 8500,
         "id": 10
     },
     {
         "nombre": "Auriculares",
-        "imagen": "./css/assets/auriculares.jpg",
+        "imagen": "/css/assets/auriculares.jpg",
         "precio": 10000,
         "id": 11
     },
     {
         "nombre": "Notebook gamer",
-        "imagen": "./css/assets/notebook_gamer.jpg",
+        "imagen": "/css/assets/notebook_gamer.jpg",
         "precio": 85000,
         "id": 12
+    },
+    {
+        "nombre": "Procesador Ryzen",
+        "imagen": "/css/assets/procesador_ryzen.jpg",
+        "precio": 22000,
+        "id": 13
+    },
+    {
+        "nombre": "Procesador I5",
+        "imagen": "/css/assets/procesador_i5.jpg",
+        "precio": 19000,
+        "id": 14
+    },
+    {
+        "nombre": "Memoria ram Geil",
+        "imagen": "/css/assets/ram_geil.jpg",
+        "precio": 9500,
+        "id": 15
+    },
+    {
+        "nombre": "Teclado Red Dragon",
+        "imagen": "/css/assets/teclado_reddragon.jpg",
+        "precio": 13000,
+        "id": 16
+    },
+    {
+        "nombre": "Notebook Acer",
+        "imagen": "/css/assets/notebook_acer.jpg",
+        "precio": 80000,
+        "id": 17
+    },
+    {
+        "nombre": "Placa AMD",
+        "imagen": "/css/assets/placa_video_amd.jpg",
+        "precio": 90000,
+        "id": 18
+    },
+    {
+        "nombre": "Mother Asrock",
+        "imagen": "/css/assets/mother_asrock.jpg",
+        "precio": 19000,
+        "id": 19
+    },
+    {
+        "nombre": "Mother Gigabyte",
+        "imagen": "/css/assets/mother_gigabyte.jpg",
+        "precio": 18500,
+        "id": 20
+    },
+    {
+        "nombre": "Mother Asus",
+        "imagen": "/css/assets/mother_asus.jpg",
+        "precio": 19700,
+        "id": 21
+    },
+    {
+        "nombre": "Monitor Asus",
+        "imagen": "/css/assets/monitor_asus.jpg",
+        "precio": 27000,
+        "id": 22
+    },
+    {
+        "nombre": "Gabinete Asus",
+        "imagen": "/css/assets/gabinete_asus.jpg",
+        "precio": 12700,
+        "id": 23
+    },
+    {
+        "nombre": "Disco Externo",
+        "imagen": "/css/assets/disco_externo.jpg",
+        "precio": 18000,
+        "id": 24
+    },
+    {
+        "nombre": "Disco wd",
+        "imagen": "/css/assets/disco_wd.jpg",
+        "precio": 15500,
+        "id": 25
+    },
+    {
+        "nombre": "Auricular Logitech",
+        "imagen": "/css/assets/auricular_logitech.jpg",
+        "precio": 10500,
+        "id": 26
+    },
+    {
+        "nombre": "Teclado Hyperx",
+        "imagen": "/css/assets/teclado_hyperx.jpg",
+        "precio": 13200,
+        "id": 27
+    },
+    {
+        "nombre": "Fuente Red Dragon",
+        "imagen": "/css/assets/fuente_reddragon.jpg",
+        "precio": 16700,
+        "id": 28
     }
 ]
