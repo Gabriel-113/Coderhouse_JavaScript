@@ -55,16 +55,32 @@
                 </div>
             </div>
         </nav>
-        <div class="titulo mt-5">
-            Productos
+    </header>
+    <div class="titulo mt-5">
+        Productos
+    </div>
+    <div class="articulos">
+        <div class="filtro">
+            <h3>Categorías</h3>
+            <ul>
+                <li id="todos">Todos</li>
+                <li id="almacenamiento">Almacenamiento</li>
+                <li id="auriculares">Auriculares</li>
+                <li id="fuentes">Fuentes</li>
+                <li id="gabinetes">Gabinetes</li>
+                <li id="ram">Memorias Ram</li>
+                <li id="monitores">Monitores</li>
+                <li id="mothers">Mothers</li>
+                <li id="notebooks">Notebooks</li>
+                <li id="procesadores">Procesadores</li>
+                <li id="teclados">Teclados</li>
+            </ul>
         </div>
-        <div id="productos" page="tienda">
-
-        </div>
-        <footer class="mt-5 p-5 text-center">
-            <div class="copy">Copyright © 2022 - Tilt | Hardware</div>
-        </footer>
-
+        <div id="productos"></div>
+    </div>
+    <footer class="mt-5 p-5 text-center">
+        <div class="copy">Copyright © 2022 - Tilt | Hardware</div>
+    </footer>
 
 
 
@@ -75,18 +91,20 @@
 
 
 
-        <!--Codigo propio-->
-        <script src="/codigo.js"></script>
-        <!--Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-            </script>
-        <!--Libreria SweetAlert, esta libreria me permite enviarle una alerta al usuario informandole que su
+
+    <!--Codigo propio-->
+    <script src="/codigo.js"></script>
+    <script src="/tienda.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <!--Libreria SweetAlert, esta libreria me permite enviarle una alerta al usuario informandole que su
     compra fue realizada-->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!--Libreria Toastify, libreria seleccionada para mostrarle al usuario que el producto se agrego al carrito
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Libreria Toastify, libreria seleccionada para mostrarle al usuario que el producto se agrego al carrito
     sin prestarle atencion al contador de arriba que no se ve cuando el usuario scrollea hacia abajo-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

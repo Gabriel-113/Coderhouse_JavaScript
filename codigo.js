@@ -2,7 +2,6 @@ const abrir = document.getElementById('abrir');
 const modal = document.getElementById('id_productos');
 const products_div = document.getElementById('productos');
 const cerrar = document.getElementById('cerrar');
-
 modal.style.display = "none";
 
 
@@ -10,14 +9,29 @@ modal.style.display = "none";
 fetch('/products.json')
     .then((respuesta) => respuesta.json())
     .then((productos) => {
-        products_div.getAttribute("inicio");
-        products_div.getAttribute("tienda");
-        if ("tienda") {
-            productos.forEach(producto => {
-                let { imagen, nombre, precio, id } = producto;
-                let product_div = document.createElement('div')
-                product_div.classList = 'card mt-5'
-                product_div.innerHTML = `
+        let page = products_div.getAttribute("page")
+        let perPage = products_div.getAttribute("per-page")
+
+        if (page === null || perPage === null) {
+            page = 0;
+            perPage = productos.length
+        } else {
+            page = parseInt(page) - 1;
+            perPage = parseInt(perPage)
+        }
+        if (perPage > productos.length) {
+            perPage = productos.length
+        }
+
+        const primerProductoIndex = page * perPage
+        const ultimoProductoIndex = primerProductoIndex + perPage
+
+        for (let i = primerProductoIndex; i < ultimoProductoIndex; i++) {
+            const producto = productos[i]
+            const { imagen, nombre, precio, id } = producto;
+            const product_div = document.createElement('div')
+            product_div.classList = 'card mt-5'
+            product_div.innerHTML = `
             <div class="descripcion img-box">
                 <img src="${imagen}" alt="">
                 <p class="name">${nombre}</p>
@@ -26,13 +40,10 @@ fetch('/products.json')
                 <div>Agregar <i class="bi bi-cart" data-id="${id}"></i></div>
             </div>
             `
-                products_div.appendChild(product_div)
-            })
-            agregar_eventos_producto();
-        } else if ("inicio") {
-
-
+            products_div.appendChild(product_div)
         }
+        agregar_eventos_producto();
+
     })
 
 abrir.addEventListener('click', () => {
@@ -191,3 +202,9 @@ function comprar() {
 }
 
 document.querySelector('.btn_comprar').addEventListener('click', comprar);
+
+
+
+//FILTRO TIENDA
+
+
