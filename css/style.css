@@ -264,7 +264,6 @@ nav {
     cursor: pointer;
 }
 
-
 #id_productos .items .car_style img {
     width: 5rem;
 }
@@ -297,7 +296,6 @@ nav {
 .items .car_style .borrar_producto:hover {
     color: rgb(5, 5, 88);
 }
-
 
 /* compra */
 
@@ -337,7 +335,7 @@ nav {
     -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75) !important;
 }
 
-
+/*Tienda*/
 .articulos {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -347,7 +345,7 @@ nav {
     border-right: 1px solid #808080;
     font-weight: bold;
     background-color: #d4d1d121;
-    
+
 }
 
 .filtro h3 {
@@ -358,8 +356,8 @@ nav {
 }
 
 ul {
-list-style: none;
-text-align: start;
+    list-style: none;
+    text-align: start;
 }
 
 li {
@@ -373,26 +371,31 @@ li:hover {
     background-color: rgba(148, 148, 148, 0.116);
 }
 
+/* Confirmar Compra */
 
+.finalizarCompra {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 500px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn_confirmar {
+    margin-top: 10px;
+    height: 55px;
+}
 
 /* footer */
 footer {
