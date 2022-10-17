@@ -191,7 +191,7 @@ class Compra {
  en el carrito o no y de ahi lo direcciona al usario*/
 function comprar() {
     if (carrito.length > 0) {
-        window.location.href = '../pages/compra.html'
+        window.location.href = 'pages/compra.html'
         carrito = []
     } else {
         Swal.fire({
