@@ -12,7 +12,7 @@ let productos
 /*Se importan los datos de los productos y se los reedistribuye en el index y en tienda mediante los atributos
 de las etiquetas html. Tambien se pinta en la pagina el div con las clases donde se va a insertar la informacion
 de los productos*/
-fetch('../products.json')
+fetch('products.json')
     .then((respuesta) => respuesta.json())
     .then((productosImportados) => {
         productos = productosImportados
@@ -191,7 +191,7 @@ class Compra {
  en el carrito o no y de ahi lo direcciona al usario*/
 function comprar() {
     if (carrito.length > 0) {
-        window.location.href = '/pages/compra.html'
+        window.location.href = '../pages/compra.html'
         carrito = []
     } else {
         Swal.fire({
